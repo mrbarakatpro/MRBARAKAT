@@ -1,0 +1,8 @@
+{
+  "name": "Remix مطعم فريسكا في البحرين | Frisca Restaurant Bahrain",
+  "description": "الموقع الرسمي لمطعم فريسكا في مملكة البحرين. استكشف قائمة الطعام الفاخرة، هوية فريسكا، معرض الأطباق، وحجز الطاولات أونلاين.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

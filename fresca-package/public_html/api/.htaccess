@@ -1,0 +1,7 @@
+# حماية الوصول المباشر إلى ملفات التكوين وقاعدة البيانات
+<FilesMatch "^(config\.php|config\.sample\.php|\.env)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+Options -Indexes

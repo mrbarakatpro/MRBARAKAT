@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. السماح بالوصول المباشر إلى ملفات الـ API ومجلد الرفع والملفات الثابتة
+  RewriteCond %{REQUEST_URI} ^/api/ [NC,OR]
+  RewriteCond %{REQUEST_URI} ^/uploads/ [NC,OR]
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 2. توجيه جميع المسارات الأخرى إلى صفحة React الرئيسية (index.html)
+  RewriteRule ^ index.html [L]
+</IfModule>
